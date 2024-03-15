@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow: scroll;
+    padding: 0;
+}
+
+.header {
+    background-color: #2deb34;
+    color: #fff;
+    /* padding: 20px; */
+    /* border-radius: 0 0 20px 20px; */
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header h3 {
+    margin-top: 20px;
+    background-color: #000000;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.balance {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.balance form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.balance input[type="number"] {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.balance button {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.down{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.balance button:hover {
+    background-color: #45a049;
+}
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    min-height: 70vh;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+#outcomeContainer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.bal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #79ff80;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#betAmount{
+    border: 0px;
+    outline: none;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#betForm button{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border: 0px;
+    outline: none;
+    padding: 10px;
+    margin: 0 0 10px 10px;
+}
+
+#outcomeColorBox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#outcomeMessage {
+    font-weight: bold;
+}
+
+#balance {
+    font-size: 24px;
+}
+
+#betAmount, #color {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .header {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+        text-align: left;
+        position: relative;
+    }
+
+    body{
+        /* overflow: hidden; */
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .down{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .down .content{
+        width: 70%;
+    }
+}
+
+
+

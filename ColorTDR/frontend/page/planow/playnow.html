@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Zone - ColorTDR</title>
+    <link rel="stylesheet" href="playnow.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to ColorTDR Play Zone</h1>
+        <h3 id="balanceHeader">Balance : $0.00</h3>
+    </div>
+    <div class="down">
+        <div class="balance">
+            <form id="transactionForm">
+                <input type="number" id="amount" placeholder="Amount" required>
+                <button type="button" id="depositBtn">Deposit</button>
+                <button type="button" id="withdrawBtn">Withdraw</button>
+            </form>
+        </div>
+        <div class="content">
+
+            <div class="container">
+                <h2>Color Betting Game</h2>
+                <form id="betForm">
+
+                    <div class="" id="periodNumber"></div>
+                    <div class="bal">
+                        <h4>Balance In Game :</h4>
+                        <p style="font-size: 26px;" id="balance">Balance: $1000</p>
+                    </div>
+                    <input type="number" id="betAmount" placeholder="Enter Bet Amount" min="5">
+                    <br>
+                    <label><input type="radio" name="color" value="red"> Red</label>
+                    <label><input type="radio" name="color" value="green"> Green</label>
+                    <label><input type="radio" name="color" value="violet"> Violet</label>
+                    <button type="submit">Place Bet</button>
+                </form>
+                <div id="outcomeContainer">
+                    <div id="outcomeColorBox"></div>
+                    <p id="outcomeMessage"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <br><br><br>
+    <script src="playnow.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
